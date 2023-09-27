@@ -13,7 +13,7 @@ import os
 import langchain
 import keys
 langchain.verbose = False
-os.environ["key"] = 
+os.environ["key"] = os.getenv('key')
 import openai
 openai.api_key = os.environ["key"] 
 def get_pdf_text(pdf_docs):
