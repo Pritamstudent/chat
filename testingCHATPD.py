@@ -13,9 +13,9 @@ import os
 import langchain
 import keys
 langchain.verbose = False
-os.environ["OPENAI_API_KEY"] = keys.key
+os.environ["key"] = 
 import openai
-openai.api_key = os.environ["OPENAI_API_KEY"] 
+openai.api_key = os.environ["key"] 
 def get_pdf_text(pdf_docs):
     text = ""
     for pdf in pdf_docs:
